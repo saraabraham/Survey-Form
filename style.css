@@ -1,0 +1,60 @@
+html {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM8rXF9w8uzhOwos3uAxghyZ8gYb6v-8JbAg&usqp=CAU);
+}
+#title {
+  color: white;
+  text-align: center;
+  font-size: 3vw;
+}
+#description {
+  color: white;
+  font-family: Arial;
+  font-size: 2vw;
+  text-align: center;
+}
+
+#survey-form {
+  box-sizing: border-box;
+  background-color: #ff88;
+  width: 50%;
+  height: 50%;
+  padding: 5vw;
+  display: block;
+  margin: auto;
+}
+label {
+  font-size: 1.8vw;
+}
+
+#name {
+  width: 25vw;
+  font-size: 1.8vw;
+  padding: 0.8vw;
+}
+
+#email {
+  width: 25vw;
+  font-size: 1.8vw;
+  padding: 0.8vw;
+}
+
+#number {
+  width: 25vw;
+  padding: 0.8vw;
+  font-size: 1.8vw;
+}
+#dropdown {
+  width: 28vw;
+  padding: 0.8vw;
+  font-size: 1.8vw;
+}
+#Comments {
+  width: 39vw;
+  font-size: 1.8vw;
+  padding: 0.8vw;
+}
+#submit {
+  width: 25vw;
+  padding: 0.8vw;
+  font-size: 1.8vw;
+}

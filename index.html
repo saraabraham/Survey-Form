@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+
+<head>
+  <title>Blood Donation Survey Form</title>
+</head>
+
+<body>
+  <header>
+    <br>
+    <h1 id="title">Blood Donation Survey</h1>
+    <p id="description"><b>Please fill out personal details.</b></p>
+  </header>
+
+  <form id="survey-form" name="survey">
+    <label for="name" id="name-label"><b>Full Name:</b></label><br><br>
+    <input type="text" id="name" name="name" placeholder="Your name.." required>
+    <br>
+    <br>
+    <label for="email" id="email-label"><b>Email ID:</b></label><br><br>
+
+    <input type="email" id="email" name="email" placeholder="Your email ID.." required oninvalid="this.setCustomValidity('Invalid Email ID')" oninput="this.setCustomValidity('')">
+
+    <br>
+    <br>
+    <label for="number" id="number-label"><b>Phone No:</b></label><br><br>
+
+    <input type="number" id="number" name="number" placeholder="Your phone no.." required min="0000000000" max="9999999999" oninvalid="this.setCustomValidity('Invalid Phone No')" oninput="this.setCustomValidity('')">
+    <br>
+    <br>
+    <label for="dropdown"><b>Country:</b></label>
+    <br>
+    <br>
+    <select id="dropdown" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+    <br><br>
+    <label><b>Blood Group:</b></label>
+    <label>
+      <input type="radio" name="blood" value="A+">A+
+    </label>
+
+    <label>
+      <input type="radio" name="blood" value="A-">A-
+    </label>
+    <label>
+      <input type="radio" name="blood" value="B+">B+
+    </label>
+    <label>
+      <input type="radio" name="blood" value="B-">B-
+    </label>
+    <label>
+      <input type="radio" name="blood" value="AB+">AB+
+    </label>
+    <label>
+      <input type="radio" name="blood" value="AB-">AB-
+    </label>
+    <label>
+      <input type="radio" name="blood" value="O+">O+
+    </label>
+    <br>
+    <br>
+    <label><b>Any Allergies</b></label>
+    <label for="Zero"><input id="Zero" type="checkbox" value="Zero"> Asthma</label>
+    <label for="One"><input id="One" type="checkbox" value="One"> Skin rashes</label>
+    <label for="Two"><input id="Two" type="checkbox" value="Two">None</label>
+    <br>
+    <br>
+    <label for="Comments"><b>Comments:</b></label><br><br>
+    <textarea id="Comments" name="Comments" rows="4" cols="50">Additional Comments</textarea>
+    <br>
+    <br>
+    <button type="submit" id="submit"><b>Submit</b></button>
+  </form>
+
+</body>
+
+</html>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
